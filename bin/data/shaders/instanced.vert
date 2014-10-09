@@ -26,7 +26,5 @@ void main()
 	
 	vec4 vPos = position;
 	vPos = vPos + vec4(instanceX*15*128,instanceY*15*128, 0,0);
-	vPos.z = vPos.z;
-
 	gl_Position = projectionMatrix * modelViewMatrix * vPos  ;
 }
